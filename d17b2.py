@@ -1,14 +1,7 @@
 import heapq
 
-s = """Register A: 51342988
-Register B: 0
-Register C: 0
-
-Program: 2,4,1,3,7,5,4,0,1,3,0,3,5,5,3,0"""
-
-reg, ins = s.split('\n\n')
-regs = [int(r.split(':')[-1]) for r in reg.split('\n')]
-ins = [int(r) for r in ins.split(':')[-1].split(',')]
+regs = [51342988, 0, 0]
+ins = [2,4,1,3,7,5,4,0,1,3,0,3,5,5,3,0]
 
 def step(A):
     B = A % 8
